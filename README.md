@@ -1,6 +1,6 @@
-# AeroBeat Input Driver Template
+# AeroBeat Input Driver - XR
 
-This is the official template for creating an **Input Driver** repository within the AeroBeat ecosystem.
+This is the official Input Driver for AeroBeat's XR support.
 
 Input Drivers bridge hardware (Webcams, VR Controllers, Smart Watches) to the AeroBeat Core contracts.
 
