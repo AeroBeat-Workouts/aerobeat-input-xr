@@ -68,7 +68,7 @@ The docs source of truth keeps XR documented as a future support path for a late
 **Reference Check:** `REF-04`, `REF-05`, and `REF-06` were satisfied: XR is documented as future support only, while official v1 gameplay input remains camera only. No repo surface now claims XR as equal-status current shipping input.
 
 **Commits:**
-- `09ddf6e` - Align XR input repo with v1 downscope
+- `Align XR input repo with v1 downscope` - pushed to `main`
 
 **Lessons Learned:** Even a small repo-truth pass benefits from making validation intent explicit: the package can remain internally coherent and testable without implying that the associated input path is part of official v1 scope.
 
