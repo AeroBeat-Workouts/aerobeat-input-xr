@@ -1,15 +1,24 @@
 # AeroBeat Input Driver - XR
 
-This is the official Input Driver for AeroBeat's XR support.
+This repo preserves AeroBeat's XR input path as **future support only**.
 
-Input Drivers bridge hardware (Webcams, VR Controllers, Smart Watches) to the AeroBeat Core contracts.
+It exists for later VR-return exploration and API continuity, but it is **not** part of the current official AeroBeat v1 gameplay-input story. Official v1 gameplay remains **camera-driven Boxing and Flow on PC first**.
+
+Input Drivers bridge hardware-specific signals (camera pipelines, XR controllers, accessibility devices, and other experiments) into normalized AeroBeat input contracts.
+
+## Current scope
+
+- preserve the XR repo/package surface for future work
+- avoid implying XR gameplay parity with the current v1 camera path
+- keep development/test metadata truthful for anyone auditing the package today
 
 ## 📋 Repository Details
 
 *   **Type:** Input Driver
+*   **Current Product Status:** **Future support only**
 *   **License:** **Mozilla Public License 2.0 (MPL 2.0)**
 *   **Dependencies:**
-    *   `aerobeat-input-core` (Canonical shared input contract)
+    *   `aerobeat-input-core` (Canonical shared input contract / intended lane ownership)
     *   `aerobeat-vendor-*` (Allowed)
 
 ## GodotEnv development flow
@@ -33,7 +42,7 @@ cd .testbed
 godotenv addons install
 ```
 
-That restores this repo's current dev/test manifest into `.testbed/addons/`. In the lane-based architecture, Input repos should describe this dependency as `aerobeat-input-core`.
+That restores this repo's current dev/test manifest into `.testbed/addons/`. The intended lane naming for input repos is `aerobeat-input-core`, but this repo's current manifest still reflects the older transition-era `aerobeat-core` package key.
 
 ### Open the workbench
 
@@ -70,3 +79,4 @@ godot --headless --path .testbed --script addons/gut/gut_cmdln.gd \
 - The current manifest still pins the transition-era `aerobeat-core` package key to `v0.1.0` alongside GUT `main`. Canonical lane ownership is `aerobeat-input-core`.
 - Repo-local unit tests live under `.testbed/tests/`; this repo's current package payload is rooted at `/`, so the workbench does not ship a `.testbed/src` bridge for this subset.
 - The current package shape is consumed from the repo root (`subfolder: "/"`) for downstream installs.
+- Passing validation here means the package surface is internally coherent, **not** that XR is an official v1 gameplay input.

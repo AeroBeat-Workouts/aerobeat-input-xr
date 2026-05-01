@@ -1,13 +1,14 @@
 {
   "$schema": "https://chickensoft.games/schemas/addons.schema.json",
   "addons": {
-    // Batch 1 pins the foundational core contract for input-driver work.
+    // Transition-era input contract pin used by this repo's current hidden workbench.
+    // Canonical lane ownership is aerobeat-input-core, but XR remains future support only.
     "aerobeat-core": {
       "url": "git@github.com:AeroBeat-Workouts/aerobeat-core.git",
       "checkout": "v0.1.0",
       "subfolder": "/"
     },
-    // GUT drives the repo-local test suite inside the hidden testbed/workbench.
+    // GUT drives the repo-local truth/manifest smoke checks in the hidden testbed.
     "gut": {
       "url": "git@github.com:bitwes/Gut.git",
       "checkout": "main",
