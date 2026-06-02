@@ -8,6 +8,11 @@
       "checkout": "v0.1.0",
       "subfolder": "/"
     },
+    "aerobeat-tool-headless-manager": {
+      "url": "../../aerobeat-tool-headless-manager",
+      "subfolder": "/",
+      "source": "symlink"
+    },
     // GUT drives the repo-local truth/manifest smoke checks in the hidden testbed.
     "gut": {
       "url": "git@github.com:bitwes/Gut.git",
